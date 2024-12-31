@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('head') %>
+  <body>
+    <%- include('header') %>
+    <h3>New messages</h3>
+    <form method="post" action="/new">
+      <div>
+        <label for="name">Name: </label>
+        <input type="text" name="name" id="name" required />
+      </div>
+      <div>
+        <label for="msg">Message: </label>
+        <input type="text" name="msg" id="msg" required />
+      </div>
+      <div>
+        <input type="submit" value="Submit" />
+      </div>
+    </form>
+    <%- include('footer') %>
+  </body>
+</html>

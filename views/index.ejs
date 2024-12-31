@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('head') %>
+  <body>
+    <%- include('header') %>
+    <ul>
+      <% messages.forEach((msg) => { %>
+      <li>
+        <p class="username"><%= msg.user%>:</p>
+        <p class="msg-text">
+          <%= msg.text %>
+          <span class="details-btn">
+            <a href="/details/<%= msg.id %>">Details</a>
+          </span>
+        </p>
+        <i><%= msg.added %></i>
+      </li>
+      <% }) %>
+    </ul>
+    <p>Add new messages <a href="/new">here</a></p>
+    <%- include('footer') %>
+  </body>
+</html>

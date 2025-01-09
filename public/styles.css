@@ -39,3 +39,7 @@ footer {
   position: fixed;
   bottom: 0;
 }
+
+.username {
+  color: deepskyblue;
+}
